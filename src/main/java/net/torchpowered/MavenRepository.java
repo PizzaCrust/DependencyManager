@@ -13,7 +13,7 @@ public class MavenRepository {
         this.link = link;
     }
 
-    void resolveJar(String groupId, String artifactId, String version, File destination){
+    public void resolveJar(String groupId, String artifactId, String version, File destination){
         String urlGroupId = groupId.replaceAll("\\.", "/");
         String artifactName = artifactId + "-" + version;
         String mavenUrl = link + urlGroupId + "/" + artifactId + "/" +  version + "/" + artifactName + ".jar";
