@@ -14,9 +14,10 @@ public class MavenRepository {
     }
 
     void resolveJar(String groupId, String artifactId, String version, File destination){
-        String urlGroupId = groupId.replaceAll(".", "/");
+        String urlGroupId = groupId.replaceAll("\\.", "/");
         String artifactName = artifactId + "-" + version;
-        String mavenUrl = link + urlGroupId + "/" + version + "/" + artifactName + ".jar";
+        String mavenUrl = link + urlGroupId + "/" + artifactId + "/" +  version + "/" + artifactName + ".jar";
+        System.out.println(mavenUrl);
         URL url;
         try {
             url = new URL(mavenUrl);
