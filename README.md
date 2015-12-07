@@ -1,4 +1,4 @@
-# DependencyManager [![Release](https://img.shields.io/github/release/jitpack/gradle-simple.svg?label=maven)](https://jitpack.io/#jitpack/gradle-simple)
+# DependencyManager ![status](https://img.shields.io/badge/build-stable-brightgreen.svg)
 A java library for resolving artifacts from Maven.
 
 ## Getting the library
